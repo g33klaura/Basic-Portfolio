@@ -1,3 +1,37 @@
+/* Delete border rule for final
+Also, why this no working?!!
+border: 5px solid Blue;
+*/
 * {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #777;
+}
+
+#name {
+  color: #FFF;
+  background-color: #4aaaa5;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  width: 200px;
+  height: 50px;
+}
+
+/* Change color back to #FFF for final */
+.nav-bar {
+  background-color: Crimson;
+  width: 100%;
+  height: 50px;
+}
+
+/* Why won't my id for <li> work? */
+li {
+  display: inline;
+}
+
+h2, h3 {
+  color: #4aaaa5;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
