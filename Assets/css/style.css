@@ -1,4 +1,4 @@
-/* Delete border rule for final
+/*
 Also, why this no working?!!
 border: 5px solid Blue;
 */
@@ -6,7 +6,7 @@ border: 5px solid Blue;
   box-sizing: border-box;
 }
 
-body {
+body, footer {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #777;
 }
@@ -19,14 +19,16 @@ body {
   height: 50px;
 }
 
-/* Change color back to #FFF for final */
+/* Change color back to #FFF for final
+Also make links not be blue/underlined */
 .nav-bar {
   background-color: Crimson;
   width: 100%;
   height: 50px;
 }
 
-/* Why won't my id for <li> work? */
+/* Why won't my id for <li> work?
+Will need separate rules for Nav & Connect */
 li {
   display: inline;
 }
@@ -34,4 +36,26 @@ li {
 h2, h3 {
   color: #4aaaa5;
   font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.about {
+  display: block;
+  background-color: Green;
+  max-width: 650px;
+}
+
+aside {
+  display: block;
+  background-color: Yellow;
+  max-width: 270px;
+}
+
+footer {
+  display: block;
+  background-color: #666;
+  border-top: 5px;
+  border-style: solid;
+  border-color: #4aaaa5;
+  width: 100%;
+  height: 50px;
 }
