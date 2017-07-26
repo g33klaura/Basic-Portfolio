@@ -6,14 +6,15 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #777;
   font-size: 14px;
-  /* Show/hide background */
-  background-image: url("../images/bkgd_pinkdust.png");
+  /* Show/hide background
+  background-image: url("../images/bkgd_pinkdust.png");*/
+  background-image: url("../images/bkgd_seigaiha.png");
 }
 
 /* NEXT: Add '|' or border for separator lines (Leave as-is for upload by due date!) */
 .nav-bar {
   background-color: #FFF;
-  border: 1.5px solid #CCC;
+  border: 1px solid #CCC;
   width: 100%;
   height: 60px;
   text-align: right;
@@ -36,7 +37,7 @@ body {
 .content {
   display: block;
   max-width: 960px;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 h1, h2, h3 {
@@ -69,26 +70,37 @@ h1, h2, h3 {
   display: block;
   color: #4aaaa5;
   background-color: #FFF;
-  border: 1px solid #DDD;
+  border: 0.5px solid #DDD;
   max-width: 650px;
   padding: 20px;
   position: relative;
 }
 
-/* Image in the About section */
-#bio img {
-  clear: right;
+
+#bio {
+  /* Need some kind of size restraints for <p> to stay within? */
 }
 
-/* Get text next to image!!! */
-/* Check if correct text color */
+/* Image in the About section */
+/* Kyle suggested float & margin here ... still not grasping why this moves p right,up */
+#bio img {
+  clear: right;
+  float: left;
+  margin-right: 20px;
+}
+
+/*
+Get text next to image!!!
+Remove border when layout is fixed
+*/
 #bio p {
   color: #777;
   font-size: 14px;
   font-weight: 100;
   line-height: 20px;
   position: relative;
-  top: 0px;
+  top: 0;
+  border: 2px solid DarkBlue;
 }
 
 aside {
@@ -96,13 +108,13 @@ aside {
   margin: 0px auto;
   color: #4aaaa5;
   background-color: #FFF;
-  border: 1px solid #DDD;
+  border: 0.5px solid #DDD;
   max-width: 270px;
   padding: 20px;
   position: relative;
   float: right;
-  bottom: 347px;
-  right: 75px;
+  bottom: 214px;
+  right: 80px;
 }
 
 aside h3 {
