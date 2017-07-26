@@ -1,108 +1,135 @@
-/*
-Also, why this nor background no working?!! *sob*
-border: 5px solid Blue;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #777;
+  font-size: 14px;
+  /* Show/hide background */
+  background-image: url("../images/bkgd_pinkdust.png");
+}
+
+/* NEXT: Add '|' or border for separator lines (Leave as-is for upload by due date!) */
+.nav-bar {
+  background-color: #FFF;
+  border: 1.5px solid #CCC;
+  width: 100%;
+  height: 60px;
+  text-align: right;
+  word-spacing: 15px;
+  padding: 20px;
+  z-index: 400;
+}
+
+/* Cool thing Patrick explained!: use comma to separate another SELECTOR but use same rule */
+.nav-bar ul li, li {
+  display: inline;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: DarkGrey;
+}
+
+/* Haleilu, this got me somewhere... */
+.content {
+  display: block;
+  max-width: 960px;
+  margin: 50px auto;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#name {
+  color: #FFF;
+  background-color: #4aaaa5;
+  text-align: center;
+  font-size: 24px;
+  max-width: 270px;
+  height: 60px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  z-index: 500;
+}
+
+/* Try adding all h together with same weight */
+/* h2, h3 {
+  color: #4aaaa5;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
 */
 
-* {
-    background-image: url("Assets/images/bkgd_pinkdust.png" );
-    box-sizing: border-box;
-}
-
-body,
-footer {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #777;
-}
-
-/* Change color back to #FFF for final */
-/* Also make links not be blue/underlined */
-/* Should list-item rules be under the id #navigation? */
-.nav-bar {
-    background-color: #FFF;
-    border: 1.5px solid #CCC;
-    width: 100%;
-    height: 50px;
-    text-align: right;
-    padding: 20px;
-}
-
-/* Why won't my id for <li> work? */
-/* Need separate rules for Nav & Connect? */
-li {
-    display: inline;
-}
-
-/* Oo oo this got me somewhere... */
-.content {
-    display: block;
-    max-width: 960px;
-    margin: 0px auto;
-}
-
-
-/* Header sizes aren't looking correct */
-#name {
-    color: #FFF;
-    background-color: #4aaaa5;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    padding: 20px;
-}
-
-h2, h3 {
-    color: #4aaaa5;
-    font-family: Georgia, Times, "Times New Roman", serif;
-}
-
 .about {
-    display: block;
-    background-color: #FFF;
-    border: 1px solid #DDD;
-    max-width: 650px;
-    padding: 20px;
-    position: relative;
+  display: block;
+  color: #4aaaa5;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  max-width: 650px;
+  padding: 20px;
+  position: relative;
 }
 
-#bio {
-    display: block;
-    background-color: Purple;
+/* Image in the About section */
+#bio img {
+  clear: right;
 }
 
+/* Get text next to image!!! */
+/* Check if correct text color */
 #bio p {
-    /* Get text next to image */
+  color: #777;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  position: relative;
+  top: 0px;
 }
 
-
-/* Needs to move to the right of .about */
 aside {
-    display: block;
-    background-color: #FFF;
-    border: 1px solid #DDD;
-    max-width: 270px;
-    padding: 20px;
+  display: block;
+  margin: 0px auto;
+  color: #4aaaa5;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  max-width: 270px;
+  padding: 20px;
+  position: relative;
+  float: right;
+  bottom: 347px;
+  right: 75px;
 }
 
+aside h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
 
-/* Needs to have icons centered in box; controlled by all over <li> rule set above? */
+/* Change tag to <sidebar> when tweaking (upload as-is for due date!!) */
+/* Check spacing */
 #icons {
-    background-color: Navy;
-    align-content: space-between;
+  margin: 0px auto;
+  width: 100%;
 }
 
 footer {
-    display: block;
-    position: fixed;
-    background-color: #666;
-    border-top: 5px;
-    border-style: solid;
-    border-color: #4aaaa5;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    font-size: 12px;
-    color: DarkGrey;
-    padding: 50px;
-    clear: both;
+  display: block;
+  position: fixed;
+  background-color: #666;
+  border-top: 5px;
+  border-style: solid;
+  border-color: #4aaaa5;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  color: DarkGrey;
+  padding: 20px;
+  clear: both;
 }

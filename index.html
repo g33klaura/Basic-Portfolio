@@ -2,67 +2,66 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Portfolio</title>
 </head>
 
 <body>
-    <!--Does "about" need real link b/c current page?-->
-    <!--Navigation bar, which is the MAIN HEADER-->
-    <div class="nav-bar">
-        <ul id="navigation">
-            <a href="#">
-                <li>About</li>
-            </a> |
-            <a href="portfolio.html">
-                <li>Portfolio</li>
-            </a> |
-            <a href="contact.html">
-                <li>Contact</li>
-            </a>
+  <!--Does "about" need real link b/c current page?-->
+  <!--Navigation bar, which is the MAIN HEADER-->
+  <div class="nav-bar">
+    <ul>
+        <li>
+          <a href="#">About</a>
+          </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+          </li>
+    </ul>
+  </div>
+  <!--Div for all content area (not incl. nav bar or footer)-->
+  <div class="content">
+    <div id="name">
+      <h1>Laura Boetcher</h1>
+    </div>
+    <!--About me section w/ paragraph & divider line-->
+    <section class="about">
+      <h2>About Me</h2>
+      <br>
+      <!--Q: Make separate ids for image and paragraph? A: No, b/c can assign id + TAG (ie. img, p)-->
+      <div id="bio">
+        <hr>
+        <br>
+        <img src="Assets/images/lauraWildBerryHair.png" alt="Laura Boetcher" width=20% />
+        <p>
+          Camembert de normandie stilton. Taleggio goat dolcelatte cheese and wine cream cheese fromage cottage cheese smelly cheese. Croque monsieur dolcelatte paneer monterey jack camembert de normandie cheese triangles edam cauliflower cheese. Macaroni cheese pecorino cheeseburger bavarian bergkase.
+        </p>
+      </div>
+    </section>
+    <!--Connect With Me aside, includes section w/ icons-->
+    <aside>
+      <h3>Connect With Me</h3>
+      <section id="icons">
+        <hr>
+        <ul>
+          <li><a href="http://www.github.com" target="_blank"><img src="Assets/images/icon_github128.png" alt="GitHub" style="width:50px;height:50px" /></a></li>
+          <li><a href="http://www.linkedin.com" target="_blank"><img src="Assets/images/icon_linkedin_square_color128.png" alt="LinkedIn" style="width:50px;height:50px" /></a></li>
+          <li><a href="http://www.stackoverflow.com" target="_blank"><img src="Assets/images/icon_stackOverflow128.png" alt="StackOverflow" style="width:50px;height:50px" /></a></li>
         </ul>
-    </div>
-    <!--Container for all content area (not nav bar or footer)-->
-    <div class="content">
-        <!--Do all HEADINGS look same b/c reset page?-->
-        <div id="name">
-            <h1>Laura Boetcher</h1>
-        </div>
-        <!--If needed put .content back here-->
-        <!--About me section w/ paragraph & divider line-->
-        <section class="about">
-            <h2>About Me</h2>
-            <br>
-            <div id="bio">
-                <hr>
-                <br>
-                <img src="Assets/images/lauraWildBerryHair.png" alt="Laura Boetcher" width=20% />
-                <p>
-                    I love cheese, especially camembert de normandie stilton. Taleggio goat dolcelatte cheese and wine cream cheese fromage cottage cheese smelly cheese. Croque monsieur dolcelatte paneer monterey jack camembert de normandie cheese triangles edam cauliflower cheese. Macaroni cheese pecorino cheeseburger bavarian bergkase.
-                </p>
-            </div>
-        </section>
-        <!--Connect With Me section-->
-        <aside>
-            <h3>Connect With Me</h3>
-            <section id="icons">
-                <hr>
-                <ul>
-                    <!--Social media icons w/ links-->
-                    <li><a href="http://www.github.com" target="_blank"><img src="Assets/images/icon_github128.png" alt="GitHub" style="width:50px;height:50px" /></a></li>
-                    <li><a href="http://www.linkedin.com" target="_blank"><img src="Assets/images/icon_linkedin_square_color128.png" alt="LinkedIn" style="width:50px;height:50px" /></a></li>
-                    <li><a href="http://www.stackoverflow.com" target="_blank"><img src="Assets/images/icon_stackOverflow128.png" alt="StackOverflow" style="width:50px;height:50px" /></a></li>
-                </ul>
-            </section>
-        </aside>
-    </div>
-    <br>
+      </section>
+    </aside>
+  </div>
+  <br>
 </body>
 <footer>
-    <p>
-        ©️Copyright 2017 Laura Boetcher
-    </p>
+  <p>
+    ©️Copyright 2017 Laura Boetcher
+  </p>
 </footer>
 
 </html>
