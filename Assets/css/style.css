@@ -82,17 +82,14 @@ h1, h2, h3 {
 }
 
 /* Image in the About section */
-/* Kyle suggested float & margin here ... still not grasping why this moves p right,up */
+/* Need to better understand why this moves p right,up */
 #bio img {
   clear: right;
   float: left;
   margin-right: 20px;
 }
 
-/*
-Get text next to image!!!
-Remove border when layout is fixed
-*/
+/* Remove border when layout is fixed */
 #bio p {
   color: #777;
   font-size: 14px;
@@ -115,6 +112,7 @@ aside {
   float: right;
   bottom: 214px;
   right: 80px;
+  clear: both;
 }
 
 aside h3 {
