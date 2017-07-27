@@ -11,7 +11,9 @@ body {
   background-image: url("../images/bkgd_seigaiha.png");
 }
 
+
 /* NEXT: Add '|' or border for separator lines (Leave as-is for upload by due date!) */
+
 .nav-bar {
   background-color: #FFF;
   border: 1px solid #CCC;
@@ -24,7 +26,9 @@ body {
   clear: both;
 }
 
+
 /* Cool thing Patrick & Ronny explained!: use comma to separate another SELECTOR but use same rule */
+
 .nav-bar ul li, li {
   display: inline;
 }
@@ -34,7 +38,9 @@ body {
   color: DarkGrey;
 }
 
+
 /* Haleilu, this got me somewhere... */
+
 .content {
   display: block;
   max-width: 960px;
@@ -61,7 +67,10 @@ h1, h2, h3 {
   clear: both;
 }
 
+
 /* Try adding all h together with same weight */
+
+
 /* h2, h3 {
   color: #4aaaa5;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -81,8 +90,12 @@ h1, h2, h3 {
   clear: both;
 }
 
+
 /* Image in the About section */
+
+
 /* Need to better understand why this moves p right,up */
+
 #bio img {
   clear: right;
   float: left;
@@ -98,6 +111,7 @@ h1, h2, h3 {
   top: 0;
 }
 
+/* Change tag to <sidebar> when tweaking (upload as-is for due date!!) */
 aside {
   display: block;
   margin: 0px auto;
@@ -118,17 +132,10 @@ aside h3 {
   font-weight: 400;
 }
 
-/* Change tag to <sidebar> when tweaking (upload as-is for due date!!) */
-/* Check spacing */
 #icons {
   margin: 0px auto;
   width: 100%;
 }
-
-/* Rules for Contact Page */
-
-
-/* Rules for Portlfolio Page */
 
 footer {
   display: block;
@@ -146,4 +153,15 @@ footer {
   color: DarkGrey;
   padding: 20px;
   clear: both;
+}
+
+/* Rules for Contact Page */
+
+
+/* Rules for Portlfolio Page */
+/* Take off mega border for final */
+#gallery tr th {
+  border: 3px solid Blue;
+  border-spacing: 5px;
+  padding: 15px;
 }
