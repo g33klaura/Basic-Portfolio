@@ -24,7 +24,7 @@ body {
   clear: both;
 }
 
-/* Cool thing Patrick explained!: use comma to separate another SELECTOR but use same rule */
+/* Cool thing Patrick & Ronny explained!: use comma to separate another SELECTOR but use same rule */
 .nav-bar ul li, li {
   display: inline;
 }
@@ -38,7 +38,6 @@ body {
 .content {
   display: block;
   max-width: 960px;
-  margin: 30px auto;
 }
 
 h1, h2, h3 {
@@ -57,6 +56,7 @@ h1, h2, h3 {
   padding: 20px;
   position: absolute;
   top: 0;
+  left: 60px;
   z-index: 500;
   clear: both;
 }
@@ -76,12 +76,9 @@ h1, h2, h3 {
   max-width: 650px;
   padding: 20px;
   position: relative;
+  left: 60px;
+  top: 30px;
   clear: both;
-}
-
-
-#bio {
-  /* Need some kind of size restraints for <p> to stay within? */
 }
 
 /* Image in the About section */
@@ -109,10 +106,10 @@ aside {
   border: 0.5px solid #DDD;
   max-width: 270px;
   padding: 20px;
-  position: absolute;
+  position: relative;
   float: right;
-  bottom: 241px;
-  right: 130px;
+  bottom: 274px;
+  right: 20px;
   clear: both;
 }
 
@@ -135,7 +132,8 @@ aside h3 {
 
 footer {
   display: block;
-  position: fixed;
+  position: relative;
+  top: 50px;
   background-color: #666;
   border-top: 5px;
   border-style: solid;
