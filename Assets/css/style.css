@@ -21,6 +21,7 @@ body {
   word-spacing: 15px;
   padding: 20px;
   z-index: 400;
+  clear: both;
 }
 
 /* Cool thing Patrick explained!: use comma to separate another SELECTOR but use same rule */
@@ -57,6 +58,7 @@ h1, h2, h3 {
   position: absolute;
   top: 0;
   z-index: 500;
+  clear: both;
 }
 
 /* Try adding all h together with same weight */
@@ -74,6 +76,7 @@ h1, h2, h3 {
   max-width: 650px;
   padding: 20px;
   position: relative;
+  clear: both;
 }
 
 
@@ -89,7 +92,6 @@ h1, h2, h3 {
   margin-right: 20px;
 }
 
-/* Remove border when layout is fixed */
 #bio p {
   color: #777;
   font-size: 14px;
@@ -97,7 +99,6 @@ h1, h2, h3 {
   line-height: 20px;
   position: relative;
   top: 0;
-  border: 2px solid DarkBlue;
 }
 
 aside {
@@ -108,10 +109,10 @@ aside {
   border: 0.5px solid #DDD;
   max-width: 270px;
   padding: 20px;
-  position: relative;
+  position: absolute;
   float: right;
-  bottom: 312px;
-  right: 80px;
+  bottom: 241px;
+  right: 130px;
   clear: both;
 }
 
@@ -126,6 +127,11 @@ aside h3 {
   margin: 0px auto;
   width: 100%;
 }
+
+/* Rules for Contact Page */
+
+
+/* Rules for Portlfolio Page */
 
 footer {
   display: block;
