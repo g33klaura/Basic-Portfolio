@@ -160,8 +160,10 @@ footer {
 
 /* Rules for Portlfolio Page */
 /* Take off mega border for final */
-#gallery tr th {
+#gallery tr td {
   border: 3px solid Blue;
   border-spacing: 5px;
   padding: 15px;
+  background-image: url("http://www.fillmurray.com/g/140/100");
+  background-repeat: no-repeat;
 }
