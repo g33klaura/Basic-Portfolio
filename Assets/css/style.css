@@ -152,4 +152,12 @@ footer {
   padding: 15px;
   background-image: url("http://www.fillmurray.com/g/140/100");
   background-repeat: no-repeat;
+  height: 100px;
+  text-align: center;
+}
+
+/* How to get the text w/ teal behind over the images?...
+Do they need ANOTHER div? */
+#gallery td {
+
 }
