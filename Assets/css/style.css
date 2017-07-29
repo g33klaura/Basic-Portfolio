@@ -146,7 +146,7 @@ footer {
 /* Rules for Portlfolio Page */
 
 /* Has ugly border so I can see what the heck I'm doing */
-#gallery tr td {
+.gallery tr td {
   border: 3px solid Blue;
   border-spacing: 5px;
   padding: 15px;
@@ -159,6 +159,16 @@ footer {
 
 /* How to get the text w/ teal behind over the images?...
 Do they need ANOTHER div? */
-#gallery td {
+#hangman {
 
+}
+
+/* Fix actual colors */
+#hangman p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: Teal;
+  color: White;
+  font-size: 14px;
 }
